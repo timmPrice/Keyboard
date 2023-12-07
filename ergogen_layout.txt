@@ -2,36 +2,37 @@ points:
   zones:
     matrix:
       columns:
-        pinkie:
-          key.stagger:
+        pinky:
         ring:
-          key.stagger:  6
+          key.stagger: 3
         middle:
-          key.stagger: 3.5
-        pointer:
-          key.stagger:  -3.2
-        reach:
-          key.stagger:  -2
+          key.stagger: 1
+        index:
+          key.stagger: -1
+        inner:
+          key.stagger: -3
       rows:
-        q:
-        a:
-        z:
-    layer:
+        mod:
+        bottom:
+        home:
+
+    thumb:
       columns:
-        tab:
+        one:
+          key.shift: [2.3u, -1u]
+          key.rotate: -4
+        two:
+          key.shift: [2.4u, -1.1u]
+          key.rotate: -8
+        three:
+          key.shift: [2.5u, -1.4u]
+          key.rotate: -16
       rows:
-        tab:
-          shift: [2.3u, -0.75u]
-          rotate: -8
-    ctrl:
-      columns:
-      rows:
-        tab:
-          shift: [3.5u, -1.u]
-          rotate: -25
-    spc:
-      columns:
-      rows:
-        tab:
-          shift: [4.65u, -1.2u]
-          rotate: -29
+        cluster:
+  mirror: &mirror
+    distance: 11u
+
+outlines:
+  raw:
+    - what: rectangle
+      where: true
